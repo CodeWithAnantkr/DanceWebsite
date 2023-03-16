@@ -1,0 +1,64 @@
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Choudhary's Dance Academy
+    style 
+        include ../static/style.css
+  body
+    nav#navbar 
+         ul 
+             div#logo
+               img(src="/static/logo2.jpg")
+               | CDA
+             li #[a(href="/") Home] 
+             li #[a(href="/") About] 
+             li #[a(href="/") Services] 
+             li #[a(href="/") Class Info] 
+             li #[a(href="/") Contact Us]
+
+    section#introSection 
+          div Welcome to Choudhary's Dance Academy
+          div.small Eat Sleep Dance Repeat 
+      
+    section#missionSection
+        h2 Our Mission  
+        
+        div.card 
+           h3 Dance Perfection
+           div.card-box
+               div.card-img 
+                   img(src="/static/logo1.jpg")
+               div.card-content   
+                   p This is the best dance academy of the universe 
+        div.card 
+           h3 Dance the way you like
+           div.card-box
+               div.card-img 
+                   img(src="/static/logo3.jpg")
+               div.card-content   
+                   p This is the best dance academy of the universe 
+        div.card 
+           h3 Expert Teaching
+           div.card-box
+               div.card-img 
+                   img(src="/static/bg1.jpg.jpg")
+               div.card-content   
+                   p This is the best dance academy of the universe 
+    section#sponsorsSection 
+         h2 Our Sponsors 
+         div#sponsors
+         img(src="/static/img/applelogo.jpg", alt="Sponsor Image", Class="spImage") 
+         img(src="/static/img/hplogo.jpg", alt="Sponsor Image", Class="spImage") 
+         img(src="/static/img/micrologo.jpg", alt="Sponsor Image", Class="spImage") 
+         img(src="/static/img/skypelogo.jpg", alt="Sponsor Image", Class="spImage") 
+
+    footer#footer 
+        | Copyright @ 2023 ChoudharyDanceAcadeny.com |All Rights Reserved
+
+
+  script 
+    include ../static/index.js 
